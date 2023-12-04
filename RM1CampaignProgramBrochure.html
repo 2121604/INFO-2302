@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RM1 Campaign Program Brochure</title>
+    <link href = "RM1CampaignProgramBrochure.css"
+          rel = "stylesheet"
+          type = "text/css">
+    <script type="text/javascript">
+            function displayAlert(){
+                alert("Your form has been submitted. Thank You!");
+            }
+    </script>
+</head>
+<body>
+<header>
+    <p id = "background_image"></p>
+    <p id = "background_content">
+            <img src="iium_logo.png" 
+             alt="logo"
+             heigth="100"
+             width="100"/>
+
+            <h1>RM1 CAMPAIGN</h1>
+            
+            <h3>Let your contributions be<br>PERPETUAL<br>for the pleasure of Allah
+                swt
+            </h3>
+            <h4>
+                “The example of those who spend their wealth in the<br>
+                way of Allah is like a seed [of grain] which grows seven<br>
+                spikes; in each spike is a hundred grains. And Allah<br>
+                multiplies [His reward] for whom He wills. And Allah is<br>
+                all-Encompassing and Knowing.”<br>
+                [Al Baqarah:261]
+            </h4>
+    </p>
+</header>
+
+<section>
+    <a>
+        Director<br>
+        IIUM Endowment Fund<br>
+        Level 3, Rectory Building<br>
+        International Islamic University Malaysia
+    </a>
+    <br>
+    <br>
+        <u>PARTICIPATION IN RM1 CAMPAIGN-MONTHLY SALARY DEDUCTION</u>
+        <form id = "deduction_form">
+            <ul>
+                <label for="name">Name :</label>
+                <input type="text" 
+                    id="name" 
+                    name="name" />
+            </ul>
+            <ul>       
+                <label for = "staff_no">Staff No. :</label>
+                <input type = "text"
+                    id = "staffNo"
+                    name = "staffNo"/>
+            </ul>
+            <ul>
+                <label for = "IC">K/C/D/I/O :</label>
+                <input type = "text"
+                    id = "IC"
+                    name = "IC"/>
+            </ul>
+            <ul>
+                <label for = "ContactNo">Contact No. :</label>
+                <input type = "text"
+                    id = "ContactNo"
+                    name = "ContactNo"/>
+            </ul>
+            <ul>
+                <label for = "email">Email :</label>
+                <input placeholder = "ex: 12345@gmail.com"
+                    type = "email"
+                    id = "email"
+                    name = "email"/>
+            </ul>
+            <ul>
+                <label for = "amount">Amount to be deducted : RM</label>
+                <input type = "text"
+                    id = "amount"
+                    name = "amount"/>
+            </ul>
+            <p>
+                The above salary deduction will take effect from _________(month)<br>
+                __________(year) until ______________(month)_____________(year)or further notice.
+            </p>
+            <input type= "button" value = "Submit" onclick = "displayAlert();">
+            <button type = "reset">Clear all</button>
+    </form>
+</section>
+
+<footer>
+    <h2>Contact us</h2>
+    <h4>IIUM Endowment Fund</h4>
+        <p>Level 3 Rectory,<br>
+           International Islamic University Malaysia<br>
+           P.O Box 10,<br>
+           50728 Kuala Lumpur,<br>
+           Tel: 03 6196 4268<br>
+           Email: ief@iium.edu.my<br>
+           Website: www.iium.edu.my/ief<br>
+           Facebook: www.facebook.com/ief.official/
+        </p>
+</footer>
+
+<script>
+    document.getElementById("deduction_form").addEventListener("submit",function(event){
+        event.preventDefault();
+
+        const btn = document.querySelector('submit');
+
+    })
+    //create an object 
+    const btn = document.querySelector('submit');
+
+    /*function displayText(){
+        var text = document.getElementById('submit');
+        text.style.display = "block";
+    }
+
+    function changeColour() { 
+            document.body.style.backgroundColor = "beige";
+            document.body.style.color = "white";
+        }
+
+    btn.addEventListener('click', displayText);
+
+    // Example JavaScript interaction - Changing color on button click
+    /*document.getElementById('deduction_form').addEventListener('submit', function(event) {
+      event.preventDefault();
+      document.body.style.backgroundColor = '#ffe066';
+    });*/
+</script>
+
+</body>
+</html>

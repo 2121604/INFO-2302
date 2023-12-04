@@ -1,0 +1,50 @@
+<!--RM1CampaignProgramBrochure.css-->
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.body{
+    font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+}
+header{
+    text-align: center;
+}
+#background_image{
+    position: absolute;
+    background-image: url('money.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50vh;
+    /*height:auto;*/
+    width: 100vw;
+    /*max-width: 100%;*/
+    z-index: -1;
+    padding: lem;
+    /*filter: blur(2px);*/
+}
+.background_content{
+    color: rgb(56, 54, 54);
+    text-align: center;
+}
+.background_content h1{
+    color: rgb(34, 34, 95);
+}
+.background_content h4{
+    width:300px;
+    text-align: center;
+    font-size: 17px;
+    color: rgb(37, 22, 22);
+    font-family: "Lucida Handwriting", "Courier New", cursive;
+    /*inline-size: min-content;*/
+    overflow-wrap: break-word;
+}
+footer {
+    text-align: center;
+    font-size: 14px;
+    background-color: rgb(191, 250, 191);
+  }
